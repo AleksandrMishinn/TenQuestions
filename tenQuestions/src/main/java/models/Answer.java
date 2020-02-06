@@ -11,11 +11,14 @@ public class Answer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private int question;
     private String text;
     private boolean active;
 
-    public Answer(int question, String text, boolean active) {
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "question")
+    private Question question;
+
+    public Answer(Question question, String text, boolean active) {
         this.question = question;
         this.text = text;
         this.active = active;
