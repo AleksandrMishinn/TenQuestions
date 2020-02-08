@@ -4,6 +4,12 @@
     <list default="true" id="63777b9a-210c-4766-9b37-71d51541e9a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Answer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/AnswersHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/AnswersHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/UserDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/UserDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +59,20 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="models" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="tenQuestions" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -113,10 +133,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580963741757" />
-    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1580964811968">
+    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1581159605554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1580964811968" />
+    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581159605554" />
+    <state x="444" y="242" width="1189" height="592" key="#xdebugger.evaluate" timestamp="1581160311760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="444" y="242" width="1189" height="592" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1581160311760" />
     <state x="614" y="115" key="CommitChangelistDialog2" timestamp="1580964943296">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -125,6 +149,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580792532303" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1581160264326">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581160264326" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1581160264326">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581160264326" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1581160264326">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581160264326" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1581160264326">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581160264326" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1581160264422">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581160264422" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1581160264422">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581160264422" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1581160264422">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581160264422" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1581160264422">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581160264422" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1580793163827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -133,9 +189,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580963437089" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580960832199">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1581155578921">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580960832199" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581155578921" />
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1581159414119">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581159414119" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utils/HibernateSessionFactoryUtil.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utils/HibernateSessionFactoryUtil.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

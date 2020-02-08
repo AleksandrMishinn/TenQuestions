@@ -46,6 +46,9 @@ public class User {
 //        answers = new ArrayList<AnswersHistory>();
     }
 
+    public User(){
+    }
+
 //    public void addAnswer(Answer answer) {
 //    }
 
@@ -57,7 +60,7 @@ public class User {
                 ", number=" + number +
                 ", name='" + name + '\'' +
                 ", age=" + age +
-                ", gender='" + gender + '\'' +
+//                ", gender='" + gender + '\'' +
                 ", preferGender=" + preferGender +
                 ", preferAgeFrom='" + preferAgeFrom + '\'' +
                 ", preferAgeTo=" + preferAgeTo +

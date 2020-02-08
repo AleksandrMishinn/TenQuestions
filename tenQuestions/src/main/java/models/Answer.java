@@ -18,6 +18,9 @@ public class Answer {
     @JoinColumn(name = "question")
     private Question question;
 
+    public Answer() {
+    }
+
     public Answer(Question question, String text, boolean active) {
         this.question = question;
         this.text = text;

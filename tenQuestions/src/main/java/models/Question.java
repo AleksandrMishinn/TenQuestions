@@ -15,6 +15,9 @@ public class Question {
     private String theme;
     private boolean active;
 
+    public Question() {
+    }
+
     public Question(String text, String theme, boolean active) {
         this.text = text;
         this.theme = theme;

@@ -23,6 +23,9 @@ public class AnswersHistory {
     @JoinColumn(name = "answer")
     private Answer answer;
 
+    public AnswersHistory() {
+    }
+
     public AnswersHistory(User user, Question question, Answer answer) {
         this.user = user;
         this.question = question;
