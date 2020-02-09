@@ -3,13 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="63777b9a-210c-4766-9b37-71d51541e9a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/dao/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/models/Answer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/AnswersHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/models/AnswersHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/models/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rest/RestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/RestApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/HibernateSessionFactoryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/utils/HibernateSessionFactoryUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/DAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/Answer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/AnswersHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/Question.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/User$Gender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/HibernateSessionFactoryUtil.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +64,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -61,16 +74,30 @@
       <recent name="models" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.RestApplication">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="com.tenquestions.Main" />
       <module name="tenQuestions" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tenquestions.RestApplication" />
+      <module name="tenQuestions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rest.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RestApplication" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -126,18 +153,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="277" y="101" key="#Project_Structure" timestamp="1580792100849">
+    <state x="277" y="101" key="#Project_Structure" timestamp="1581267513729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="277" y="101" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1580792100849" />
+    <state x="277" y="101" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1581267513729" />
     <state x="690" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1580963741757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580963741757" />
-    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1581159605554">
+    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1581268003184">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581159605554" />
+    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581268003184" />
+    <state x="669" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1581269409600">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="669" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581269409600" />
     <state x="434" y="159" width="1189" height="592" key="#xdebugger.evaluate" timestamp="1581239248636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -150,22 +181,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580792532303" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1581240167393">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1581269989157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581240167393" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1581240167393">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581269989157" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1581269989157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581240167393" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1581240167392">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581269989157" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1581269989157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581240167392" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1581240167393">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581269989157" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1581269989157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581240167393" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581269989157" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1581240167393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -198,20 +229,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="342" y="216" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1581266344047" />
+    <state x="702" y="140" key="refactoring.ChangeSignatureDialog" timestamp="1581268200708">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="702" y="140" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581268200708" />
     <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1581159414119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581159414119" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dao/UserDAO.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
