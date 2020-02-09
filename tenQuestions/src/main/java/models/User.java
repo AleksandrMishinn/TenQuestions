@@ -1,7 +1,7 @@
 package models;
 
 import javax.persistence.*;
-import java.util.ArrayList;
+
 
 
 @Entity
@@ -16,11 +16,16 @@ public class User {
     private String email;
     private char number;
     private String name;
-    private boolean gender;
     private short age;
 
-    @Column(name = "prefer_gender")
-    private boolean preferGender;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "gender", columnDefinition="enum('male','female')")
+    private Gender gender;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "prefer_gender", columnDefinition="enum('male','female')")
+    private Gender preferGender;
 
     @Column(name = "prefer_age_from")
     private boolean preferAgeFrom;
@@ -33,7 +38,7 @@ public class User {
 //    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
 //    private ArrayList<AnswersHistory> answers;
 
-    public User(String email, char number, String name, boolean gender, short age, boolean preferGender, boolean preferAgeFrom, boolean preferAgeTo, String password) {
+    public User(String email, char number, String name, Gender gender, short age, Gender preferGender, boolean preferAgeFrom, boolean preferAgeTo, String password) {
         this.email = email;
         this.number = number;
         this.name = name;
@@ -60,10 +65,13 @@ public class User {
                 ", number=" + number +
                 ", name='" + name + '\'' +
                 ", age=" + age +
-//                ", gender='" + gender + '\'' +
+                ", gender='" + gender + '\'' +
                 ", preferGender=" + preferGender +
                 ", preferAgeFrom='" + preferAgeFrom + '\'' +
                 ", preferAgeTo=" + preferAgeTo +
                 '}';
     }
+
+    private enum Gender{male, female};
+
 }

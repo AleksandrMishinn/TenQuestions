@@ -36,6 +36,7 @@ public class UserService {
             User user = userDAO.getById(id);
             return user;
         } catch (Exception e) {
+            e.printStackTrace();
             return null;
         }
 

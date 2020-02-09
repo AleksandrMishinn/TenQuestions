@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) throws SQLException {
 
         UserService userService = new UserService();
-        User user = userService.getById(1);
+        User user = userService.getById(3);
         System.out.println(user);
 //        userService.saveUser(user);
 //        Auto ferrari = new Auto("Ferrari", "red");
