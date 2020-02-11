@@ -5,7 +5,7 @@ import java.util.Set;
 
 public interface DAO <T> {
 
-    T create(T obj);
+    T create (Map<String, String> data);
 
     T getById(int id);
 

@@ -3,27 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="63777b9a-210c-4766-9b37-71d51541e9a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/dao/DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/models/Answer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/AnswersHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/models/AnswersHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/models/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rest/RestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/RestApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/HibernateSessionFactoryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/utils/HibernateSessionFactoryUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/DAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/UserDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/Answer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/AnswersHistory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/Question.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/User$Gender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/HibernateSessionFactoryUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tenquestions/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/dao/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tenquestions/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/dao/UserDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tenquestions/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tenquestions/rest/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/rest/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tenquestions/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tenquestions/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tenquestions/dao/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tenquestions/models/User$Gender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tenquestions/models/User$Gender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tenquestions/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tenquestions/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tenquestions/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tenquestions/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
     </list>
+    <list id="f6eb55d4-ef0e-4808-8a40-89898a5edf3a" name="Default Changelist1" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,9 +28,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Interface" />
         <option value="JavaFXApplication" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -120,6 +112,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="63777b9a-210c-4766-9b37-71d51541e9a0" name="Default Changelist" comment="" />
+      <changelist id="f6eb55d4-ef0e-4808-8a40-89898a5edf3a" name="Default Changelist1" comment="" />
       <created>1580556338957</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -161,14 +154,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580963741757" />
-    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1581268003184">
+    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1581396719179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581268003184" />
+    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581396719179" />
     <state x="669" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1581269409600">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="669" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581269409600" />
+    <state x="648" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581305163037">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="648" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581305163037" />
     <state x="434" y="159" width="1189" height="592" key="#xdebugger.evaluate" timestamp="1581239248636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -181,22 +178,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580792532303" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1581269989157">
+    <state width="1860" height="282" key="GridCell.Tab.0.bottom" timestamp="1581399163046">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581269989157" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1581269989157">
+    <state width="1860" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581399163046" />
+    <state width="1860" height="282" key="GridCell.Tab.0.center" timestamp="1581399163046">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581269989157" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1581269989157">
+    <state width="1860" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581399163046" />
+    <state width="1860" height="282" key="GridCell.Tab.0.left" timestamp="1581399163046">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581269989157" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1581269989157">
+    <state width="1860" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581399163046" />
+    <state width="1860" height="282" key="GridCell.Tab.0.right" timestamp="1581399163046">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581269989157" />
+    <state width="1860" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581399163046" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1581240167393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -217,14 +214,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580793163827" />
+    <state x="807" y="437" key="VCS.ChangelistChooser" timestamp="1581396620978">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="807" y="437" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581396620978" />
     <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1580963437089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580963437089" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1581265721615">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1581394658479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581265721615" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581394658479" />
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581396665133">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581396665133" />
     <state x="342" y="216" key="new project wizard" timestamp="1581266344047">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

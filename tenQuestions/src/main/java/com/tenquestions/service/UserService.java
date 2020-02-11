@@ -1,6 +1,6 @@
 package com.tenquestions.service;
 
-import com.tenquestions.dao.UserDAO;
+import com.tenquestions.dao.UserDAOImpl;
 import com.tenquestions.models.User;
 import org.springframework.stereotype.Service;
 
@@ -11,43 +11,25 @@ import java.util.Set;
 @Service
 public class UserService {
 
-    private UserDAO userDAO = new UserDAO();
+    private UserDAOImpl userDAOImpl = new UserDAOImpl();
 
     public UserService() {
     }
 
-    public Map create(Map data) {
-
-        Map resultMap = new HashMap<String, String>();
-        try {
-            userDAO.create(data);
-            resultMap.put("success", "true");
-            resultMap.put("errorMessage", "");
-
-        } catch (Exception e) {
-            resultMap.put("success", "false");
-            resultMap.put("errorMessage", e.getStackTrace());
-        }
-
-        return resultMap;
-    }
-
     public User getById(int id) {
-
-        try {
-            User user = userDAO.getById(id);
-            return user;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
-        }
-
+        return userDAOImpl.getById(id);
     }
+
+    public User create(Map data) {
+        return userDAOImpl.create(data);
+    }
+
+
 
     public Set getAll() {
 
         try {
-            Set userSet = userDAO.getAll();
+            Set userSet = userDAOImpl.getAll();
             return userSet;
         } catch (Exception e) {
             return null;
@@ -59,7 +41,7 @@ public class UserService {
 
         Map resultMap = new HashMap();
 
-        resultMap = userDAO.update(user, data);
+        resultMap = userDAOImpl.update(user, data);
 
         return resultMap;
     }
@@ -67,7 +49,7 @@ public class UserService {
     public Map delete(int id) {
         Map resultMap = new HashMap<String, String>();
         try {
-            userDAO.delete(id);
+            userDAOImpl.delete(id);
             resultMap.put("success", "true");
             resultMap.put("errorMessage", "");
 

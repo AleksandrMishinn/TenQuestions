@@ -1,12 +1,16 @@
 package com.tenquestions.models;
 
 import javax.persistence.*;
-
+import java.util.Map;
 
 
 @Entity
 @Table (name = "users")
 public class User {
+
+    public int getId() {
+        return id;
+    }
 
     @Id
     @Column(name = "id")
@@ -14,10 +18,9 @@ public class User {
     private int id;
 
     private String email;
-    private char number;
+    private String number;
     private String name;
     private short age;
-
 
     @Enumerated(EnumType.STRING)
     @Column(name = "gender", columnDefinition="enum('male','female')")
@@ -28,17 +31,17 @@ public class User {
     private Gender preferGender;
 
     @Column(name = "prefer_age_from")
-    private boolean preferAgeFrom;
+    private int preferAgeFrom;
 
     @Column(name = "prefer_age_to")
-    private boolean preferAgeTo;
+    private int preferAgeTo;
 
     private String password;
 
-//    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-//    private ArrayList<AnswersHistory> answers;
+    public User() {
+    }
 
-    public User(String email, char number, String name, Gender gender, short age, Gender preferGender, boolean preferAgeFrom, boolean preferAgeTo, String password) {
+    public User(String email, String number, String name, Gender gender, short age, Gender preferGender, int preferAgeFrom, int preferAgeTo, String password) {
         this.email = email;
         this.number = number;
         this.name = name;
@@ -48,14 +51,21 @@ public class User {
         this.preferAgeFrom = preferAgeFrom;
         this.preferAgeTo = preferAgeTo;
         this.password = password;
-//        answers = new ArrayList<AnswersHistory>();
     }
 
-    public User(){
+    public User(Map<String, String> data){
+        this.email = data.get("email");
+        this.number = data.get("number");
+        this.name = data.get("name");
+        this.gender = Gender.valueOf(data.get("gender"));
+        this.age = Short.parseShort(data.get("age"));
+        this.preferGender = Gender.valueOf(data.get("preferGender"));
+        this.preferAgeFrom = Integer.parseInt(data.get("preferAgeFrom"));
+        this.preferAgeTo = Integer.parseInt(data.get("preferAgeTo"));
+        this.password = data.get("password");
     }
 
-//    public void addAnswer(Answer answer) {
-//    }
+
 
     @Override
     public String toString() {
