@@ -12,6 +12,42 @@ public class User {
         return id;
     }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(short age) {
+        this.age = age;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
+
+    public void setPreferGender(Gender preferGender) {
+        this.preferGender = preferGender;
+    }
+
+    public void setPreferAgeFrom(int preferAgeFrom) {
+        this.preferAgeFrom = preferAgeFrom;
+    }
+
+    public void setPreferAgeTo(int preferAgeTo) {
+        this.preferAgeTo = preferAgeTo;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)

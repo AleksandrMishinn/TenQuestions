@@ -23,8 +23,8 @@ public class UserController {
         this.userService = userService;
     }
 
-    @GetMapping(value = "/users/{id}")
-    public ResponseEntity read(@PathVariable(name = "id") int id) {
+    @GetMapping(value = "/users/get/{id}")
+    public ResponseEntity getById(@PathVariable(name = "id") int id) {
 
         User user = userService.getById(id);
 
@@ -33,7 +33,6 @@ public class UserController {
         } else {
             return new ResponseEntity<String>(user.toString(), HttpStatus.OK);
         }
-
     }
 
     @PostMapping(value = "/users/create")
@@ -48,5 +47,22 @@ public class UserController {
         }
     }
 
+    @DeleteMapping(value = "/users/delete/{id}")
+    public ResponseEntity<?> delete(@PathVariable(name = "id") int id) {
+        final boolean deleted = userService.deleteById(id);
+
+        return deleted
+                ? new ResponseEntity(HttpStatus.OK)
+                : new ResponseEntity(HttpStatus.NOT_FOUND);
+    }
+
+    @PutMapping(value = "/users/update/{id}")
+    public ResponseEntity<?> update(@PathVariable(name = "id") int id, @RequestBody Map<String, String> data) {
+        final boolean updated = userService.update(id, data);
+
+        return updated
+                ? new ResponseEntity(HttpStatus.OK)
+                : new ResponseEntity(HttpStatus.NOT_MODIFIED);
+    }
 
 }

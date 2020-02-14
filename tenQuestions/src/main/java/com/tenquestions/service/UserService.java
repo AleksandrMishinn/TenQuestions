@@ -24,7 +24,9 @@ public class UserService {
         return userDAOImpl.create(data);
     }
 
-
+    public boolean deleteById(int id) {
+        return userDAOImpl.deleteById(id);
+    }
 
     public Set getAll() {
 
@@ -37,29 +39,11 @@ public class UserService {
 
     }
 
-    public Map update(User user, Map data) {
-
-        Map resultMap = new HashMap();
-
-        resultMap = userDAOImpl.update(user, data);
-
-        return resultMap;
+    public boolean update(int id, Map data) {
+        return userDAOImpl.update(id, data);
     }
 
-    public Map delete(int id) {
-        Map resultMap = new HashMap<String, String>();
-        try {
-            userDAOImpl.delete(id);
-            resultMap.put("success", "true");
-            resultMap.put("errorMessage", "");
 
-        } catch (Exception e) {
-            resultMap.put("success", "false");
-            resultMap.put("errorMessage", e.getStackTrace());
-        }
-
-        return resultMap;
-    }
 
 
 }
