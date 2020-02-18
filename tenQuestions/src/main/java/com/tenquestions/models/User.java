@@ -8,46 +8,6 @@ import java.util.Map;
 @Table (name = "users")
 public class User {
 
-    public int getId() {
-        return id;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setAge(short age) {
-        this.age = age;
-    }
-
-    public void setGender(Gender gender) {
-        this.gender = gender;
-    }
-
-    public void setPreferGender(Gender preferGender) {
-        this.preferGender = preferGender;
-    }
-
-    public void setPreferAgeFrom(int preferAgeFrom) {
-        this.preferAgeFrom = preferAgeFrom;
-    }
-
-    public void setPreferAgeTo(int preferAgeTo) {
-        this.preferAgeTo = preferAgeTo;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -73,6 +33,54 @@ public class User {
     private int preferAgeTo;
 
     private String password;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(short age) {
+        this.age = age;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = Gender.valueOf(gender.toUpperCase());
+    }
+
+    public void setPreferGender(Gender preferGender) {
+        this.preferGender = preferGender;
+    }
+
+    public void setPreferGender(String gender) {
+        this.gender = Gender.valueOf(gender.toUpperCase());
+    }
+
+    public void setPreferAgeFrom(int preferAgeFrom) {
+        this.preferAgeFrom = preferAgeFrom;
+    }
+
+    public void setPreferAgeTo(int preferAgeTo) {
+        this.preferAgeTo = preferAgeTo;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public User() {
     }
@@ -105,19 +113,19 @@ public class User {
 
     @Override
     public String toString() {
-        return "models.User{" +
-                "id=" + id +
-                ", email='" + email + '\'' +
-                ", number=" + number +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", gender='" + gender + '\'' +
-                ", preferGender=" + preferGender +
-                ", preferAgeFrom='" + preferAgeFrom + '\'' +
-                ", preferAgeTo=" + preferAgeTo +
+        return "{" +
+                "\"id\" : " + id +
+                ", \"email\" : \"" + email + "\"" +
+                ", \"number\" : \"" + number + "\"" +
+                ", \"name\" : \"" + name + "\"" +
+                ", \"age\" : " + age +
+                ", \"gender\" : \"" + gender + "\"" +
+                ", \"preferGender\" : \"" + preferGender + "\"" +
+                ", \"preferAgeFrom\" : " + preferAgeFrom +
+                ", \"preferAgeTo\" : " + preferAgeTo +
                 '}';
     }
 
-    private enum Gender{male, female};
+    private enum Gender{MALE, FEMALE};
 
 }

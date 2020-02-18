@@ -3,7 +3,7 @@ package com.tenquestions.models;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "answers_history")
+@Table(name = "questions")
 public class Question {
 
     @Id
@@ -26,13 +26,12 @@ public class Question {
 
     @Override
     public String toString() {
-        return "models.AnswerHistory{" +
-                "id=" + id +
-                ", text='" + text + '\'' +
-                ", theme=" + theme +
-                ", active=" + active +
+        return "{" +
+                "\"id\" : " + id +
+                ", \"text\" : \"" + text + "\"" +
+                ", \"theme\" : \"" + theme + "\"" +
+                ", \"active\" : " + active +
                 '}';
-//
     }
 
 }

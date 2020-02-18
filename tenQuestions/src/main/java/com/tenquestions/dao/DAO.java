@@ -1,17 +1,15 @@
 package com.tenquestions.dao;
 
 import java.util.Map;
-import java.util.Set;
+
 
 public interface DAO <T> {
 
-    T create (Map<String, String> data);
+    T create (Map data); //todo Type for Map
 
     T getById(int id);
 
-    Set getAll();
+    boolean update(int id, Map data); //todo Type for Map
 
-    Map update(T t, Map data);
-
-    Map delete(int id);
+    boolean deleteById(int id);
 }

@@ -4,7 +4,6 @@ import com.tenquestions.dao.UserDAOImpl;
 import com.tenquestions.models.User;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
@@ -28,16 +27,16 @@ public class UserService {
         return userDAOImpl.deleteById(id);
     }
 
-    public Set getAll() {
-
-        try {
-            Set userSet = userDAOImpl.getAll();
-            return userSet;
-        } catch (Exception e) {
-            return null;
-        }
-
-    }
+//    public Set getAll() {
+//
+//        try {
+//            Set userSet = userDAOImpl.getAll();
+//            return userSet;
+//        } catch (Exception e) {
+//            return null;
+//        }
+//
+//    }
 
     public boolean update(int id, Map data) {
         return userDAOImpl.update(id, data);

@@ -1,20 +1,17 @@
 package com.tenquestions.dao;
 
-import com.google.protobuf.MapEntry;
 import com.tenquestions.models.User;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import com.tenquestions.utils.HibernateSessionFactoryUtil;
 
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
-import java.util.Set;
 
 public class UserDAOImpl implements UserDAO{
 
-    public User create (Map data) {  //todo  <String, String>
+    public User create (Map data) { //todo Type for Map
 
         if (data.isEmpty()) {return null;}
 
@@ -60,8 +57,8 @@ public class UserDAOImpl implements UserDAO{
         return true;
     }
 
-    public boolean update(int id, Map<String, String> data) {
-        
+    public boolean update(int id, Map data) { //todo Type for Map
+
         User user = getById(id);
 
         if (user == null){ return false;}
@@ -69,17 +66,21 @@ public class UserDAOImpl implements UserDAO{
         Method method = null;
         String methodName = "set";
 
-        for (Map.Entry<String, String> currentPair : data.entrySet()) {
+        Iterator iterator = data.entrySet().iterator();
+
+        while (iterator.hasNext()){  //todo Refactoring
+
+            Map.Entry entry = (Map.Entry) iterator.next();
 
             //get setters for editable fields
             try {
-                String key = currentPair.getKey();
+                String key = (String) entry.getKey();
                 key = key.substring(0,1).toUpperCase() + key.substring(1).toLowerCase();
 
                 method = user.getClass().getMethod(methodName + key, String.class);
 
                 String[] sArg = new String[1];
-                sArg[0] = currentPair.getValue();
+                sArg[0] = (String) entry.getValue();
                 method.invoke(user, sArg);
 
             } catch (Exception e) {
@@ -93,20 +94,10 @@ public class UserDAOImpl implements UserDAO{
         session.update(user);
         tx1.commit();
         session.close();
-        
+
         return true;
     }
 
 
-    public Set getAll() {
-        return null;
-    }
 
-    public Map update(Object o, Map data) {
-        return null;
-    }
-
-    public Map delete(int id) {
-        return null;
-    }
 }

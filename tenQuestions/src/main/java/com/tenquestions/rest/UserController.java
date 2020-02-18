@@ -15,7 +15,7 @@ public class UserController {
     private final UserService userService;
 
     public UserController() {
-        userService = new UserService(); //todo
+        userService = new UserService();
     }
 
     @Autowired

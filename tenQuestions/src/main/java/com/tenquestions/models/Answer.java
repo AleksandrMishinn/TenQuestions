@@ -14,7 +14,7 @@ public class Answer {
     private String text;
     private boolean active;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "question")
     private Question question;
 
@@ -29,11 +29,19 @@ public class Answer {
 
     @Override
     public String toString() {
-        return "models.Answer{" +
-                "id=" + id +
-                ", question='" + question + '\'' +
-                ", text=" + text +
-                ", active=" + active +
+//        return "models.Answer{" +
+//                "id=" + id +
+//                ", question='" + question + '\'' +
+//                ", text=" + text +
+//                ", active=" + active +
+//                '}';
+
+        return "{" +
+                "\"id\" : " + id +
+                ", \"text\" : \"" + text + "\"" +
+                ", \"active\" : \"" + active + "\"" +
+                ", \"question\" : " + question +
                 '}';
+
     }
 }
