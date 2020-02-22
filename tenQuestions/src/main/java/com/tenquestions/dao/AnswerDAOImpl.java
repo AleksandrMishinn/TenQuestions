@@ -1,7 +1,6 @@
 package com.tenquestions.dao;
 
 import com.tenquestions.models.Answer;
-import com.tenquestions.models.Question;
 import com.tenquestions.utils.HibernateSessionFactoryUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -42,8 +41,14 @@ public class AnswerDAOImpl implements AnswerDAO{
         return result;
     }
 
-    public Question getById(int id) {
-       return null;
+    public Answer getById(int id) {
+        Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
+        Transaction tx1 = session.beginTransaction();
+        Answer answer = session.get(Answer.class, id);
+        tx1.commit();
+        session.close();
+
+        return answer;
     }
 
     @Override

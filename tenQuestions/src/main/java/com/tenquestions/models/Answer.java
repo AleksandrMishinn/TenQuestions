@@ -29,12 +29,6 @@ public class Answer {
 
     @Override
     public String toString() {
-//        return "models.Answer{" +
-//                "id=" + id +
-//                ", question='" + question + '\'' +
-//                ", text=" + text +
-//                ", active=" + active +
-//                '}';
 
         return "{" +
                 "\"id\" : " + id +

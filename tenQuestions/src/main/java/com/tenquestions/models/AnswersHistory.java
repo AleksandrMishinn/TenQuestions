@@ -32,6 +32,10 @@ public class AnswersHistory {
         this.answer = answer;
     }
 
+    public int getId() {
+        return id;
+    }
+
     @Override
     public String toString() {
         return "models.AnswerHistory{" +

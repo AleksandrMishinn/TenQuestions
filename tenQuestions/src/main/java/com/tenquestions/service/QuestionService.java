@@ -16,6 +16,10 @@ public class QuestionService {
         return questionDAOImpl.getById(id);
     }
 
+    public Question getById(String id) {
+        return getById(Integer.parseInt(id));
+    }
+
     public String getRandomN(int n){
         return questionDAOImpl.getRandomN(n);
     }

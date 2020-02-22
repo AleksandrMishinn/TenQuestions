@@ -2,31 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63777b9a-210c-4766-9b37-71d51541e9a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/alexa.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tenquestions/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tenquestions/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/dao/DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tenquestions/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tenquestions/dao/AnswerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/dao/AnswerDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tenquestions/dao/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/dao/UserDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tenquestions/models/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/models/Answer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tenquestions/models/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/models/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tenquestions/models/AnswersHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/models/AnswersHistory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tenquestions/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tenquestions/rest/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/rest/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tenquestions/rest/AnswerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/rest/AnswerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tenquestions/service/AnswerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/service/AnswerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tenquestions/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/service/QuestionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tenquestions/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tenquestions/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/tenquestions/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tenquestions/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tenquestions/RestApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tenquestions/RestApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tenquestions/dao/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tenquestions/dao/DAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tenquestions/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tenquestions/dao/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tenquestions/dao/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tenquestions/dao/UserDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tenquestions/dao/AnswerDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tenquestions/dao/AnswerDAOImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/tenquestions/models/Answer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tenquestions/models/Answer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/tenquestions/models/AnswersHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tenquestions/models/AnswersHistory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tenquestions/models/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tenquestions/models/Question.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/tenquestions/models/User$Gender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tenquestions/models/User$Gender.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tenquestions/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tenquestions/models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tenquestions/rest/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tenquestions/rest/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tenquestions/rest/AnswerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tenquestions/rest/AnswerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tenquestions/service/AnswerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tenquestions/service/AnswerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tenquestions/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tenquestions/service/QuestionService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/tenquestions/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tenquestions/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tenquestions/utils/HibernateSessionFactoryUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tenquestions/utils/HibernateSessionFactoryUtil.class" afterDir="false" />
     </list>
     <list id="f6eb55d4-ef0e-4808-8a40-89898a5edf3a" name="Default Changelist1" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,6 +72,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tenquestions.rest" />
+      <recent name="com.tenquestions.service" />
       <recent name="com.tenquestions.dao" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
@@ -106,8 +103,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RestApplication" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.RestApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -171,18 +168,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580963741757" />
-    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1582004127594">
+    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1582360560435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582004127594" />
+    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582360560435" />
     <state x="669" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1581269409600">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="669" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581269409600" />
-    <state x="648" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581305163037">
+    <state x="756" y="379" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1582355838608">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="648" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581305163037" />
+    <state x="756" y="379" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1582355838608" />
+    <state x="648" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582360190339">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="648" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582360190339" />
     <state x="690" y="267" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1581864849105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -199,38 +200,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581761124826" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1582007181277">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1582363090963">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582007181277" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1582007181277">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582363090963" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1582363090963">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582007181277" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1582007181277">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582363090963" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1582363090963">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582007181277" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1582007181277">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582363090963" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1582363090963">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582007181277" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1582007181277">
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582363090963" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1582363090964">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582007181277" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1582007181277">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582363090964" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1582363090964">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582007181277" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1582007181277">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582363090964" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1582363090963">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582007181277" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1582007181277">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582363090963" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1582363090964">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582007181277" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582363090964" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1580793163827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -243,10 +244,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580963437089" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1582006419514">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1582354925873">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582006419514" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582354925873" />
     <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581396665133">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -268,9 +269,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/tenquestions/dao/AnswerDAOImpl.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/tenquestions/Main.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tenquestions/dao/AnswersHistoryDAOImpl.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

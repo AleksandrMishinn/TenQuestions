@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class UserDAOImpl implements UserDAO{
 
-    public User create (Map data) { //todo Type for Map
+    public User create (Map data) {
 
         if (data.isEmpty()) {return null;}
 

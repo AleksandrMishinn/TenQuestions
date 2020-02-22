@@ -1,5 +1,7 @@
 package com.tenquestions.rest;
 
+import com.tenquestions.models.Answer;
+import com.tenquestions.models.User;
 import com.tenquestions.service.AnswerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -20,6 +22,18 @@ public class AnswerController {
     @Autowired
     public AnswerController(AnswerService answerService) {
         this.answerService = answerService;
+    }
+
+    @GetMapping(value = "/answers/get/{id}")
+    public ResponseEntity getById(@PathVariable(name = "id") int id) {
+
+        Answer answer = answerService.getById(id);
+
+        if (answer == null) {
+            return new ResponseEntity<String>("", HttpStatus.NOT_FOUND);
+        } else {
+            return new ResponseEntity<String>(answer.toString(), HttpStatus.OK);
+        }
     }
 
     @GetMapping(value = "/answers/get_answers_by_question/{id}")

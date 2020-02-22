@@ -126,6 +126,6 @@ public class User {
                 '}';
     }
 
-    private enum Gender{MALE, FEMALE};
+    private enum Gender{male, female};
 
 }

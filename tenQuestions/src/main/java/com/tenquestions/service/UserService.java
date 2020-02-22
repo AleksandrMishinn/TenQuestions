@@ -19,6 +19,10 @@ public class UserService {
         return userDAOImpl.getById(id);
     }
 
+    public User getById(String id) {
+        return getById(Integer.parseInt(id));
+    }
+
     public User create(Map data) {
         return userDAOImpl.create(data);
     }
