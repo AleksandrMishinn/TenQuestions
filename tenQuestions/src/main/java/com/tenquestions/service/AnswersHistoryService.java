@@ -18,12 +18,4 @@ public class AnswersHistoryService {
         return answersHistoryDAOImpl.create(data);
     }
 
-//    public AnswersHistory getById(int id) {
-//        return answersHistoryDAOImpl.getById(id);
-//    }
-
-//    public AnswersHistory getById(String id) {
-//        return getById(Integer.parseInt(id));
-//    }
-
 }

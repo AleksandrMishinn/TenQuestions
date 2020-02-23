@@ -1,7 +1,6 @@
 package com.tenquestions.rest;
 
 import com.tenquestions.models.Answer;
-import com.tenquestions.models.User;
 import com.tenquestions.service.AnswerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

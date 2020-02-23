@@ -7,7 +7,7 @@ import org.hibernate.Transaction;
 
 import java.util.Collection;
 import java.util.Iterator;
-import java.util.Map;
+
 
 public class AnswerDAOImpl implements AnswerDAO{
 
@@ -51,20 +51,6 @@ public class AnswerDAOImpl implements AnswerDAO{
         return answer;
     }
 
-    @Override
-    public Object create(Map data) {
-        return null;
-    }
-
-    @Override
-    public boolean update(int id, Map data) {
-        return false;
-    }
-
-    @Override
-    public boolean deleteById(int id) {
-        return false;
-    }
 }
 
 

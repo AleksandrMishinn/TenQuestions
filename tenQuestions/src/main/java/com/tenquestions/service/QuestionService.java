@@ -9,8 +9,7 @@ public class QuestionService {
 
     private QuestionDAOImpl questionDAOImpl = new QuestionDAOImpl();
 
-    public QuestionService() {
-    }
+    public QuestionService() {}
 
     public Question getById(int id) {
         return questionDAOImpl.getById(id);

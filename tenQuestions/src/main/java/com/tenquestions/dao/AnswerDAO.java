@@ -1,5 +1,11 @@
 package com.tenquestions.dao;
 
-public interface AnswerDAO<User> extends DAO{
+import com.tenquestions.models.Answer;
+
+public interface AnswerDAO{
+
+    String getAnswersByQuestionsId(int id);
+
+    Answer getById(int id);
 
 }

@@ -1,6 +1,10 @@
 package com.tenquestions.dao;
 
-public interface QuestionDAO<Question> extends DAO{
+import com.tenquestions.models.Question;
+
+public interface QuestionDAO{
+
+    Question getById(int id);
 
     String getRandomN(int n);
 

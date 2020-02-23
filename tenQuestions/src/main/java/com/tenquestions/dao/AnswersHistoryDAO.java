@@ -1,5 +1,9 @@
 package com.tenquestions.dao;
 
-public interface AnswersHistoryDAO<User> extends DAO{
+import com.tenquestions.models.AnswersHistory;
 
+import java.util.Map;
+
+public interface AnswersHistoryDAO{
+    AnswersHistory create(Map data);
 }

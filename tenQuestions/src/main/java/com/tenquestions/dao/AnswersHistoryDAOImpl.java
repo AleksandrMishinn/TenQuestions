@@ -14,7 +14,6 @@ import org.hibernate.Transaction;
 import java.util.Map;
 
 public class AnswersHistoryDAOImpl implements AnswersHistoryDAO {
-
     public AnswersHistory create(Map data) {
 
         if (data.isEmpty()) {return null;}
@@ -42,20 +41,5 @@ public class AnswersHistoryDAOImpl implements AnswersHistoryDAO {
         session.close();
 
         return answersHistory;
-    }
-
-    @Override
-    public Object getById(int id) {
-        return null;
-    }
-
-    @Override
-    public boolean update(int id, Map data) {
-        return false;
-    }
-
-    @Override
-    public boolean deleteById(int id) {
-        return false;
     }
 }

@@ -1,7 +1,6 @@
 package com.tenquestions;
 
 import com.tenquestions.models.AnswersHistory;
-import com.tenquestions.models.Question;
 import com.tenquestions.models.User;
 import com.tenquestions.service.AnswerService;
 import com.tenquestions.service.AnswersHistoryService;
@@ -15,14 +14,15 @@ import java.util.Map;
 public class Main {
     public static void main(String[] args) throws SQLException {
 
+//for tests
 //        UserService userService = new UserService();
 //        User user = userService.getById(3);
 //        System.out.println(user);
-
+//
 //        QuestionService questionService = new QuestionService();
 //        String result = questionService.getRandomN(3);
 //        System.out.println(result);
-
+//
 //        AnswerService answerService = new AnswerService();
 //        String result = answerService.getAnswersByQuestionsId(2);
 //        System.out.println(result);
@@ -35,6 +35,5 @@ public class Main {
         data.put("answer", 15);
         AnswersHistory result = answersHistoryService.create(data);
         System.out.println(result.toString());
-
     }
 }
